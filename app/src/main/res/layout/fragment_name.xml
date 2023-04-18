@@ -3,24 +3,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    android:id="@+id/map"
+    tools:context=".NameFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!-- EditText con estilo personalizado -->
+    <EditText
+        android:id="@+id/editTextName"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        />
 
     <!-- Button con estilo personalizado -->
     <Button
-        android:id="@+id/buttonP"
+        android:id="@+id/buttonUpdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Open"
+        android:text="Actualizar"
         android:layout_marginTop="16dp"
         android:layout_gravity="center"
         android:textColor="@android:color/white"
 
         />
+
 
 </FrameLayout>
